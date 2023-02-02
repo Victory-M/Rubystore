@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const ProductsList = ({ product }) => {
   return (
-    <div className="product-item  center">
+    <Card className="product-item  center">
       <div className="">
         <Card.Img
           className="pt-4 "
@@ -14,14 +14,14 @@ const ProductsList = ({ product }) => {
         />
 
         <Card.Body>
-          <Card.Title>{product.title}</Card.Title>
+          <Card.Title>{product.title.slice(0, 20)}</Card.Title>
           <Card.Text>{product.price} </Card.Text>
           <NavLink to={`/products/${product.id}`}>
             <Button variant="success">Buy Now</Button>
           </NavLink>
         </Card.Body>
       </div>
-    </div>
+    </Card>
   );
 };
 
