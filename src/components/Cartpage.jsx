@@ -16,16 +16,18 @@ const Cartpage = () => {
     <div className="cart-container">
       {state.map((product, index) => {
         return (
-          <div key={index} className="cart">
+          <div key={index} className="cart py-5">
             <div className="img-container">
-              <img
-                src={product.image}
-                alt="product img"
-                height="200px"
-                width="180px"
-                className="center"
-              />
-              <h3 className="center mt-3">{product.title}</h3>
+              <div className="center">
+                <img
+                  src={product.image}
+                  alt="product img"
+                  height="200px"
+                  width="180px"
+                  className="center"
+                />
+              </div>
+              <h3 className="center mt-3">{product.title.slice(0, 28)}</h3>
             </div>
 
             <h3 className="fw-bold center ">
@@ -65,6 +67,7 @@ const Cartpage = () => {
           </div>
         );
       })}
+      <hr />
       {state.length > 0 && (
         <div className="total center mt-5">
           <h2>Total =</h2>

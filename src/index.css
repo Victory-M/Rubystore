@@ -256,6 +256,7 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  border: 1px solid rgb(115, 112, 112);
 }
 .cart-btn {
   height: 6vh;
@@ -324,5 +325,7 @@ textarea {
   .cart {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
