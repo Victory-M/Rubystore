@@ -67,7 +67,7 @@ const Cartpage = () => {
           </div>
         );
       })}
-      <hr />
+      
       {state.length > 0 && (
         <div className="total center mt-5">
           <h2>Total =</h2>
