@@ -235,6 +235,7 @@ textarea {
 
 .pro-details {
   display: flex;
+  flex-direction:row;
   padding: 1.2rem;
 }
 
@@ -327,5 +328,10 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .pro-details {
+    display: flex;
+    padding: 1.2rem;
+    flex-direction: column;
   }
 }
